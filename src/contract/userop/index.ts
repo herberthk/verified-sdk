@@ -107,7 +107,7 @@ class GasLessTransaction extends VerifiedContract {
         // Validate api key
         this.validateInput(DATATYPES.STRING,this.walletAddress);
 
-        // Define the kind of paymaster you want to use. If you do not want to use a paymaster,
+        // Define the kind of paymaster you want to use.
         const paymasterContext = { type: "payg" };
 
         this.paymasterMiddleware = Presets.Middleware.verifyingPaymaster(
